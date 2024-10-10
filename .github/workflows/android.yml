@@ -1,4 +1,4 @@
-name: Java CI
+name: calculator
 
 on:
   push:
@@ -18,8 +18,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '17' # Specify the JDK version
-        distribution: 'adopt' # or 'temurin'
+        java-version: '11' 
+     
 
     - name: Build with Maven
       run: mvn clean install
